@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  clubhouse-create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: singingwolfboy/create-linked-clubhouse-story@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          clubhouse-token: ${{ secrets.CLUBHOUSE_TOKEN }}
+          project-name: GH Integration Test
