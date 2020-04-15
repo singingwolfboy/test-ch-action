@@ -1,6 +1,6 @@
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   clubhouse-create:
@@ -11,3 +11,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           clubhouse-token: ${{ secrets.CLUBHOUSE_TOKEN }}
           project-name: GH Integration Test
+          user-map: |
+            {
+              "singingwolfboy": "5d49d770-ea52-4f7f-986e-402dedb0bbfe"
+            }
