@@ -10,7 +10,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           clubhouse-token: ${{ secrets.CLUBHOUSE_TOKEN }}
-          project-name: Engineering
+          project-name: GH Integration Test
           opened-state-name: Reviewing
           merged-state-name: Landed
           closed-state-name: Won't Pursue
